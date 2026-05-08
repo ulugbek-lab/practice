@@ -28,18 +28,33 @@
 # result2 = add2("Jake")
 
 
-print("=======keyword and default argument==========")
+# print("=======keyword and default argument==========")
 
-# DEFINE
-
-
-def plus_greet(name, age=100):
-    print("function is executed")
-    return f"hi {name}, you are {age} years old"
+# # DEFINE
 
 
-result = plus_greet(name="beki", age=22)
-print(result)
+# def plus_greet(name, age=100):
+#     print("function is executed")
+#     return f"hi {name}, you are {age} years old"
 
-result2 = plus_greet("micheal")
-print(result2)
+
+# result = plus_greet(name="beki", age=22)
+# print(result)
+
+# result2 = plus_greet("micheal")
+# print(result2)
+
+
+print("=======Scope==========")
+
+b = 100  # 3
+# Define
+
+
+def calculate(a, b):  # 2
+    c = a * b  # 1
+    print(f"the c value: {c}")
+
+
+# Call
+calculate(10, 20)
