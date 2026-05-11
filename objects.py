@@ -43,29 +43,47 @@
 #     print(letter)
 
 
-print("====Dictionary====")
-# Dictionary is JSON object!
+# print("====Dictionary====")
+# # Dictionary is JSON object!
 
-person = {
-    "name": "chris",
-    "age": 22,
-    "is_married": False
-}
-person_obj = dict(name="beki", age=22, single=True)
-print(person)
-print(person_obj)
+# person = {
+#     "name": "chris",
+#     "age": 22,
+#     "is_married": False
+# }
+# person_obj = dict(name="beki", age=22, single=True)
+# print(person)
+# print(person_obj)
 
-name = person_obj["name"]
-print(name)
-
-# Method:get()
 # name = person_obj["name"]
-balance = person_obj.get("balance", 213)
-hobby = person_obj.get("hobby")
-print(hobby)  # result: none
-print(balance)
+# print(name)
+
+# # Method:get()
+# # name = person_obj["name"]
+# balance = person_obj.get("balance", 213)
+# hobby = person_obj.get("hobby")
+# print(hobby)  # result: none
+# print(balance)
 
 
-# del person_obj["single"]  # delete
-for key in person_obj:
-    print(f"{key}: => {person_obj[key]}")
+# # del person_obj["single"]  # delete
+# for key in person_obj:
+#     print(f"{key}: => {person_obj[key]}")
+
+
+print("======================ERROR HANDLING=======================")
+car_dict = dict(name="toyota", year=2030, electric=True)
+
+try:
+
+    a = car_dict.speed
+    result = car_dict['brand']
+    print(result)
+except KeyError as err:
+    print("no origin state was found:", err)
+except AttributeError as err:
+    print("attributeError:", err)
+else:
+    print("its executed successfully")
+finally:
+    print("last logic executed ")
