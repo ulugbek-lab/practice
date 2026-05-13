@@ -96,3 +96,5 @@ print(your_car)
 
 response = your_car()  # object called as function
 print(response)
+
+print(dir(__builtins__))
