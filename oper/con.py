@@ -22,7 +22,7 @@ print(b**3)  # ^3
 
 print("="*10)
 
-c = dict(name="chris", age=22)
+c = dict(name="chris", age=22)  # Dict is used for creating an object
 d = dict(name="chris", age=22)
 e = c
 print(c == d)
@@ -32,7 +32,7 @@ print(e is c)  # true
 print(d is c)  # false
 
 
-print("=========Condition========")
+print("=========Condition========")  # conditions doesnt return , they print
 x = 65
 if x > 50:
     print("Case A")
