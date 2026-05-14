@@ -1,6 +1,7 @@
 print("============Inheritance============")
 # Parent only provides public and protected(_status) prop(state + methods) to its child, not private (__status)
 
+
 class Animal:  # parent
     description = "The class creates an animals"
 
@@ -23,6 +24,9 @@ class Dog(Animal):  # Child
 
     def protect(self):
         print("I can protect you")
+
+    def make_voice(self):
+        print(f"the {self.name} animal can make says: {self.sound}")
 
 
 class Cat(Animal):  # Child
@@ -67,3 +71,24 @@ print(Animal.description)
 print(Dog.description)
 print(dog.voice)
 print(dog._status)
+
+print("============Polimorphism============")
+
+dog.make_voice()
+cat.make_voice()
+
+print("--------------")
+# fish > Fish > Animal > Object
+a = isinstance(fish, Fish)
+b = isinstance(fish, Animal)
+c = isinstance(fish, object)
+d = isinstance("Bug", object)
+result = a and b and c and d
+print(result)
+
+
+# Fish > Animal > object
+data = issubclass(Fish, Animal)
+data1 = issubclass(Animal, object)
+print(data)
+print(data1)
