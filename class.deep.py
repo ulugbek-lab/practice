@@ -27,7 +27,7 @@ class Account():
     def holder(self):
         return self.__owner
 
-    @holder.setter # used to chnage state of an object
+    @holder.setter  # used to chnage state of an object
     def holder(self, new_owmer):
         print("change ownership:", new_owmer)
         self.__owner = new_owmer
@@ -45,6 +45,10 @@ my_account.withdraw(500)
 my_account.get_balance()
 print("------------")
 
+
+
+
+
 try:
     result = my_account.__amount
     print(result)
@@ -53,5 +57,5 @@ except Exception as err:
 
 # Getter vs Setter
 print("current owner before:", my_account.holder)
-my_account.holder = "ulugbek" # state
+my_account.holder = "ulugbek"  # state
 print(my_account.holder)
