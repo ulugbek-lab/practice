@@ -45,7 +45,7 @@
 # print(z)  # *list
 
 
-# args > tuple
+# ARGS > tuple
 def calculate(*args):
     total = 1
     for x in args:
@@ -60,3 +60,14 @@ def calculate(*args):
 calculate(4, 3, 3)
 print("-------")
 calculate(2, 4)
+
+
+# **kwargs > dictionary
+def intoduce(**kwargs):
+    print(f"the type of (**kwargs) value:{type(kwargs)}")
+    print(f"hi i am{kwargs["name"]} and i am {kwargs["age"]} and my  hobby is {kwargs["hobby"]}")
+    pass
+
+
+# Call
+intoduce(name="chris", age=22, hobby="football")
