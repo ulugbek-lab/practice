@@ -65,9 +65,28 @@ calculate(2, 4)
 # **kwargs > dictionary
 def intoduce(**kwargs):
     print(f"the type of (**kwargs) value:{type(kwargs)}")
-    print(f"hi i am{kwargs["name"]} and i am {kwargs["age"]} and my  hobby is {kwargs["hobby"]}")
+    print(
+        f"hi i am{kwargs["name"]} and i am {kwargs["age"]} and my  hobby is {kwargs["hobby"]}")
     pass
 
 
 # Call
 intoduce(name="chris", age=22, hobby="football")
+
+
+def greeting(*args, **kwargs):
+    print(args)
+    print(kwargs)
+
+
+greeting("hi", True, 10, name="Clark", age=34)
+
+
+
+print("======ZIP======") # ZIP to merge two tuples
+tuple1 = (1, 2, 3, 4)
+tuple2 = ("a", "b")
+zipped = zip(tuple1, tuple2)
+print(zipped)
+result = list(zipped)
+print(result) #[(1, 'a'), (2, 'b')]
