@@ -89,5 +89,29 @@ print(numbers)  # [323, 213, 23, 23, 12, 12, 5, 2]
 
 # immutable sorted(immutable)
 numbs = [2, 43, 23, 100]
-new_numbs = sorted(numbs) #returnd new list instead, dont modifies in place
+new_numbs = sorted(numbs)  # returnd new list instead, dont modifies in place
 print(numbs, new_numbs)
+
+
+print("========Lambda============")  # small anonymous function!
+
+
+def calculate(x, y): return x * y
+
+
+result = calculate(2, 34)
+print(result)
+
+people = [
+    ("beki", 23),
+    ("mike", 45),
+    ("john", 25),
+    ("noe", 16)
+]
+people.sort()  # sorted by people names
+print(people)
+
+
+# sort by age via lambda
+people.sort(key=lambda person: person[1])
+print(people)
