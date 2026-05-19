@@ -18,3 +18,26 @@ print(numbers)
 
 del numbers[0:2]
 print(numbers)
+
+print("====== set ========")
+# set of unique collection without keeping order!
+new_numbers = array("i", [3, 45, 5, 3, 24, 45,  32, 3, 45, 32, 1, 446])
+numbs_set = set(new_numbers)
+print(numbs_set, type(numbs_set))
+numbs_set.add(909)
+print(numbs_set)
+
+
+print("=======Specific Operators=======")
+# | & - ^
+a = {20, 32, 12}
+b = {20, 10}
+result1 = a | b  # union
+result2 = a & b  # same
+result3 = a - b  # difference
+result4 = a ^ b  # symetric
+
+print(result1)
+print(result2)
+print(result3)
+print(result4)
