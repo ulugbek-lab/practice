@@ -18,7 +18,7 @@ list_numbers = [*numbers]  # a version (same value but different ID)
 print(list_numbers)
 
 print("-------")
-people = [("Ross", 33), ("steve", 65), ("mark", 23)]
+people = [("Ross", 33), ("steve", 60), ("mark", 23), ("steve", 60)]
 list_people = [person[0]for person in people]  # b version
 print(list_people)
 
@@ -32,3 +32,13 @@ cars = [
 list_cars = [car[1]for car in cars if car[1] > 80]  # c version
 print(list_cars)
 
+print("========= set & dictionary comprehension  =========")
+numbs = [1, 2, 8, 4, 2, 12, 1]
+set_numbs = {*numbs}
+print(set_numbs)
+
+dict_people = {person[0]: person[1] for person in people}  # b version
+print(dict_people)
+dict_people = {person[0]: person[1]
+               for person in people if person[1] > 30}  # c version
+print(dict_people)
