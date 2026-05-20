@@ -3,7 +3,7 @@
 2. set and dictionary comp
 '''
 print("=========what is comprehension & list comprehension =========")
-# Comprehension act like spread operators
+# Comprehension act like SPREAD operators
 
 '''Comprehensions general syntax:
 a) *Iterable 
@@ -14,7 +14,7 @@ c) <Expression> for items in iterable <condition>
 
 # List comp.
 numbers = [1, 2, 3, 4, 2, 12, 1]
-list_numbers = [*numbers]  # a version (same value but different ID)
+list_numbers = [*numbers]  # a version (same value but different ID) spread operator
 print(list_numbers)
 
 print("-------")
