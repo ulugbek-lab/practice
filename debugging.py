@@ -44,7 +44,22 @@ MacOS > brew
 '''
 
 
-with Image.open("material/me.png") as img_obj:
-    resized_img = img_obj.resize((400, 200))
-    resized_img.show()
-    resized_img.save("material/sample.png")
+# with Image.open("material/me.png") as img_obj:
+#     resized_img = img_obj.resize((400, 200))
+#     resized_img.show()
+#     resized_img.save("material/sample.png")
+
+
+print("====== Debugging ======")
+
+
+def get_summary(*args):  # define
+    total_amount = 0
+    for a in args:
+        total_amount += a
+        return total_amount  # debugging (space bug)
+
+
+# call
+test = 100
+print(get_summary(1, 2, 3, 4, 5)) 
