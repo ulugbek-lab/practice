@@ -26,3 +26,14 @@ git pull origin master
 - Class deed dive 
 - Operation and Conditions 
 - Loop 
+
+## Pip commands:
+```
+windows pip | macOS pip3
+
+pip list 
+pip install pillow 
+pip uninstall pillow 
+pip show pillow 
+pip freeze > requirement.txt(save it there)
+```
